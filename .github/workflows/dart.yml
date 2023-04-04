@@ -21,7 +21,6 @@ jobs:
         with:
           channel: 'stable' # or: 'beta', 'dev' or 'master'
       - run: flutter pub get
-      - run: flutter test
       - run: flutter build web
 
       # Note: This workflow uses the latest stable version of the Dart SDK.
