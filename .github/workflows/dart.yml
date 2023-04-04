@@ -18,8 +18,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: subosito/flutter-action@v2
+      - uses: bluefireteam/flutter-gh-pages@v7
         with:
-          channel: 'stable' # or: 'beta', 'dev' or 'master'
-      - run: flutter pub get
-      - run: flutter build web
-
+          baseHref: /q_r_scan_sun/
