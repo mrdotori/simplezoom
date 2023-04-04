@@ -20,7 +20,9 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: 'stable' # or: 'beta', 'dev' or 'master'
-          baseHref: /simplezoom/
       - run: flutter pub get
       - run: flutter build web
-
+      - uses: actions/upload-pages-artifact@v1
+          with:
+        # Upload entire repository
+          path: './build/web'
