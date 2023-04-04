@@ -22,5 +22,4 @@ jobs:
           channel: 'stable' # or: 'beta', 'dev' or 'master'
       - run: flutter pub get
       - run: flutter build web
-      - uses: actions/upload-pages-artifact@v1
-          path: '.'
+
