@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
               },
               child: const Text('Open Scanner'),
             ),
-            Text('Barcode Result2: $result'),
+            Text('Barcode Result3: $result'),
           ],
         ),
       ),
